@@ -61,4 +61,14 @@ function add(a:number, b:number) {
     return {a, b}
 }
 const result = add(5, 3)
-console.log(result.a, result.b);
+// console.log(result.a, result.b);
+
+
+// Function with generic type
+function funcGeneric<T>(arg: T) {
+    return arg;
+}
+
+const resultFuncGeneric = funcGeneric("Hello TypeScript!");
+console.log(resultFuncGeneric);
+
